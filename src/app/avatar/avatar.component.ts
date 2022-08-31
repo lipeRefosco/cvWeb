@@ -9,9 +9,4 @@ export class AvatarComponent {
 
   avatarURL = window.location.hostname === "localhost" ?
   "assets/avatar-github.jpeg" : "https://avatars.githubusercontent.com/u/92929224?v=4"
-  
-  ngOnInit(): void {
-    console.log(this.avatarURL)
-  }
-
 }
