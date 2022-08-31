@@ -1,0 +1,15 @@
+<ul class="menu__links">
+
+    <li *ngFor="let link of links">
+        <a class="menu__link" href="{{ link.uri }}">
+            <!-- Icon -->
+            <span class="menu__icon">
+                <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L7 8.31579L2 14.6316" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="menu__label">{{ link.label }}</span>
+        </a>
+    </li>
+
+</ul>

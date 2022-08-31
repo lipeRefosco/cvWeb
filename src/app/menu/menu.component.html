@@ -1,10 +1,5 @@
 <div class="menu">
     <app-avatar></app-avatar>
     <h2 class="menu__nome">{{ nome }}</h2>
-    <ul class="menu__links">
-        <li><a href="{{ links[0].uri }}"> {{links[0].label}} </a></li>
-        <li><a href="#educacao">Educação</a></li>
-        <li><a href="#portifolio">Portifólio</a></li>
-        <li><a href="#contato">Contate-me</a></li>
-    </ul>
+    <app-menu-links></app-menu-links>
 </div>
