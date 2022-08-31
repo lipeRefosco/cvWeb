@@ -1,0 +1,15 @@
+.menu {
+    width: 370px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: white;
+
+    h2.menu__nome {
+        text-align: center;
+    }
+
+}
