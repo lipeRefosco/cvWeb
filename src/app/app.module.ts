@@ -7,12 +7,22 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuLinksComponent } from './menu-links/menu-links.component';
 
+// Pages
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { EducacaoComponent } from './pages/educacao/educacao.component';
+import { PortifolioComponent } from './pages/portifolio/portifolio.component';
+import { ContatoComponent } from './pages/contato/contato.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AvatarComponent,
     MenuComponent,
-    MenuLinksComponent
+    MenuLinksComponent,
+    AboutMeComponent,
+    EducacaoComponent,
+    PortifolioComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

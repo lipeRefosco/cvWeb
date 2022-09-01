@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap  } from '@angular/router';
 
 @Component({
   selector: 'app-menu-links',
@@ -25,7 +26,5 @@ export class MenuLinksComponent {
       label: "Contato"
     },
   ]
-
-  pathname = window.location.pathname;
 
 }
