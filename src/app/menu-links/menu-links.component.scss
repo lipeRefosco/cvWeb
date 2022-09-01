@@ -11,9 +11,11 @@
         height: 24px;
         padding: 2px 6px;
         position: relative;
+
         // Content
         display: flex;
         align-items: center;
+        
         // Style
         border-radius: 5px;
         background-color: $primary-color;
@@ -30,15 +32,16 @@
             position: absolute;
             right: 0px;
             border-radius: 0 5px 5px 0px;
+            
             // Content
             display: flex;
             align-items: center;
+            
             // Style
             transition: width 200ms,
                         border-radius 100ms,
                         opacity 100ms,
                         transform 100ms;
-            opacity: 1;
             transform-origin: right;
             transform: scaleX(0);
             background-color: $secondary-color;
@@ -46,16 +49,28 @@
             svg { margin-left: 6px; }
         }
 
-        &:hover {
+        &-onpage {
+            background-color: $secondary-color;
+
+            .menu__icon { background-color: transparent; }
+        }
+
+        &:active {
+            .menu__icon { opacity: 1; }
+        }
+
+        // Remove redundância
+        &:hover, &-onpage {
+
             .menu__icon {
                 opacity: 1;
                 transform: scaleX(1);
             }
+
         }
 
         &:active, &-onpage {
-            background-color: transparent;
-            
+
             .menu__label {
                 color: white;
                 font-weight: 500;
@@ -65,8 +80,8 @@
             .menu__icon {
                 width: 100%;
                 border-radius: 5px;
-                opacity: 1;
             }
+
         }
     }
 }

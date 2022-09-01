@@ -6,22 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-links.component.scss']
 })
 export class MenuLinksComponent {
+
   links = [
     {
-      uri: "#home",
+      pathname: "/",
       label: "Sobre mim"
     },
     {
-      uri: "#educacao",
+      pathname: "/educacao",
       label: "Educação"
     },
     {
-      uri: "#portifolio",
+      pathname: "/portifolio",
       label: "Portifólio"
     },
     {
-      uri: "#contato",
-      label: "Contate-me"
+      pathname: "/contato",
+      label: "Contato"
     },
   ]
+
+  pathname = window.location.pathname;
+
 }
