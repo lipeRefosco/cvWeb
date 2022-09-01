@@ -1,6 +1,19 @@
-.wrapper {
+.container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper {
+    width: 95%;
+    display: flex;
+    gap: 15px;
+}
+
+.main {
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
 }
