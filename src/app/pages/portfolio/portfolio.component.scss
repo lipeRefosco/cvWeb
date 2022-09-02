@@ -1,0 +1,55 @@
+// Debug
+// * { outline: 1px solid red; }
+
+.card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+
+    &__image { width: inherit; height: inherit; }
+
+    &__infos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+        transition: background-color 200ms ease-out;
+
+        a { color: white; }
+
+        h3, p, .lista {
+            transform: translateY(40px);
+            opacity: 0;
+            transition-property: transform, opacity;
+            transition-duration: 300ms;
+            transition-timing-function: ease-out;
+        }
+
+        .link {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: .5);
+
+            h3, p, .lista {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+
+        }
+
+    }
+
+}

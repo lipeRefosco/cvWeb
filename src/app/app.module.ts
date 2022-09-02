@@ -10,7 +10,7 @@ import { MenuLinksComponent } from './menu-links/menu-links.component';
 // Pages
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { EducacaoComponent } from './pages/educacao/educacao.component';
-import { PortifolioComponent } from './pages/portifolio/portifolio.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { CursosComponent } from './cursos/cursos.component';
 
@@ -22,7 +22,7 @@ import { CursosComponent } from './cursos/cursos.component';
     MenuLinksComponent,
     AboutMeComponent,
     EducacaoComponent,
-    PortifolioComponent,
+    PortfolioComponent,
     ContatoComponent,
     CursosComponent
   ],

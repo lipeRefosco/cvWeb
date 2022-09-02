@@ -18,8 +18,8 @@ export class MenuLinksComponent {
       label: "Educação"
     },
     {
-      pathname: "/portifolio",
-      label: "Portifólio"
+      pathname: "/portfolio",
+      label: "Portfólio"
     },
     {
       pathname: "/contato",

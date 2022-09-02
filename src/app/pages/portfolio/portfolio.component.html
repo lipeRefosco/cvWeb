@@ -1,0 +1,27 @@
+<h1>
+    <small># </small> Portfólio
+</h1>
+
+<ul class="lista flex-row flex-wrap just-cont--space-evenly">
+    <li *ngFor="let project of projects" class="card">
+        <img class="card__image" src="{{ project }}" alt="projeto tal">
+        <div class="card__infos">
+            <h3>Projeto tal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, officia?</p>
+            <ul class="lista">
+                <li class="link">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1M11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1M11 21C13.0711 21 14.75 16.5228 14.75 11C14.75 5.47715 13.0711 1 11 1M11 21C8.92893 21 7.25 16.5228 7.25 11C7.25 5.47715 8.92893 1 11 1M1 14.125H20.6875M1 8.5H20.6875" stroke="white" stroke-width="2"/>
+                    </svg>                            
+                    <a href="#">Site</a>
+                </li>
+                <li class="link">
+                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.69556 18.7681C2.89708 20.3304 2.89708 15.9783 1 15.4204M14.3911 21V17.0943C14.3911 15.9783 14.5027 15.532 13.8332 14.8624C16.9578 14.5276 19.9708 13.3001 19.9708 8.16684C19.9694 6.83326 19.4491 5.55256 18.5201 4.59587C18.9558 3.4375 18.9157 2.1538 18.4085 1.0249C18.4085 1.0249 17.1809 0.690123 14.5027 2.47561C12.2343 1.88482 9.85239 1.88482 7.58397 2.47561C4.90575 0.690123 3.67823 1.0249 3.67823 1.0249C3.17102 2.1538 3.1309 3.4375 3.56663 4.59587C2.63757 5.55256 2.11729 6.83326 2.11593 8.16684C2.11593 13.3001 5.12893 14.5276 8.25353 14.8624C7.58397 15.532 7.58397 16.2015 7.69556 17.0943V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="#">Github</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
