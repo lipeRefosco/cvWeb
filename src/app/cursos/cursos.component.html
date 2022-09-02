@@ -1,0 +1,15 @@
+<ul class="lista">
+    <li *ngFor="let curso of cursos" class="curso">
+        <div class="curso__logo">
+            <img src="{{ curso.instituicao.logo }}" alt="{{ curso.instituicao.nome }}">
+        </div>
+        <div class="curso__desc">
+            <h3>{{ curso.nome }}</h3>
+            <p>{{ curso.instituicao.nome }}</p>
+            <span>{{ curso.instituicao.inicio }} até {{ curso.instituicao.fim }}</span>
+        </div>
+        <div class="curso__opc">
+            <span class="curso__opc-code">Code ID: hash...asdpoj1jvds-u2jknasf-n$@#)(asawras</span>
+        </div>
+    </li>
+</ul>
