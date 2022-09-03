@@ -13,7 +13,7 @@
     // Style
     border-radius: 5px;
     background-color: $primary-color;
-    transition: background-color 200ms;
+    transition: background-color 100ms;
 
     .menu__label {
         position: absolute;
@@ -41,21 +41,23 @@
         background-color: $secondary-color;
         
         svg { margin-left: 6px; }
+
+    }
+
+    &:active {
+        .menu__icon { opacity: 1; }
+        
     }
 
     &-onpage {
         background-color: $secondary-color;
 
         .menu__icon { background-color: transparent; }
-    }
-
-    &:active {
-        .menu__icon { opacity: 1; }
+    
     }
 
     // Remove redundância
-    &:hover, &-onpage {
-
+    &-onpage, &:hover {
         .menu__icon {
             opacity: 1;
             transform: scaleX(1);
@@ -63,8 +65,7 @@
 
     }
 
-    &:active, &-onpage {
-
+    &-onpage, &:active{
         .menu__label {
             color: white;
             font-weight: 500;
