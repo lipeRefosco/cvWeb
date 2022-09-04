@@ -1,3 +1,5 @@
+@import '../library';
+
 .container {
     min-height: 100vh;
     display: flex;
@@ -17,4 +19,10 @@
     padding: 25px;
     background-color: white;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: $min-screen) {
+    .wrapper {
+        flex-direction: column;
+    }
 }

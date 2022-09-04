@@ -2,13 +2,13 @@
     <small># </small> Portfólio
 </h1>
 
-<ul class="lista flex-row flex-wrap just-cont--space-evenly">
+<ul class="lista flex-row flex-wrap gap-4">
     <li *ngFor="let project of projects" class="card">
         <img class="card__image" src="{{ project }}" alt="projeto tal">
         <div class="card__infos">
             <h3>Projeto tal</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, officia?</p>
-            <ul class="lista">
+            <ul class="lista gap-2">
                 <li class="link">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1M11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1M11 21C13.0711 21 14.75 16.5228 14.75 11C14.75 5.47715 13.0711 1 11 1M11 21C8.92893 21 7.25 16.5228 7.25 11C7.25 5.47715 8.92893 1 11 1M1 14.125H20.6875M1 8.5H20.6875" stroke="white" stroke-width="2"/>

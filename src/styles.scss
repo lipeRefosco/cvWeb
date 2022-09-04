@@ -1,22 +1,11 @@
+@import "bootstrap";
 @import 'library';
 @import 'app/general.scss';
 
-:host {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-size: 14px;
   font-family: $font-stack;
   color: $tertiary-color;
   font-weight: 400;
-  padding: 0;
-  margin: 0;
   background-color: #bbbbbb;
 }
 
@@ -26,12 +15,13 @@ a, a:visited {
 }
 
 a:hover {
+  color: $tertiary-color;
   font-weight: 500;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
-  margin: 0px 0;
+  margin: 0;
 }
 
 ul, li{

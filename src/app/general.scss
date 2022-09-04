@@ -1,11 +1,8 @@
-.lista {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
-}
+@import "bootstrap";
 
-.flex-row { flex-direction: row; }
-.flex-wrap { flex-wrap: wrap; }
-.just-cont--space-between { justify-content: space-between; }
-.just-cont--space-evenly { justify-content: space-evenly; }
+.lista {
+    @extend .mt-3;
+    @extend .list-group;
+    @extend .justify-content-around;
+    @extend .p-0;
+}

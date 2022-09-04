@@ -1,3 +1,4 @@
+@import "bootstrap";
 // Debug
 // * { outline: 1px solid red; }
 
@@ -10,20 +11,18 @@
     &__image { width: inherit; height: inherit; }
 
     &__infos {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: white;
+        @extend .w-100;
+        @extend .h-100;
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .justify-content-center;
+        @extend .align-items-center;
+        @extend .position-absolute;
+        @extend .text-center;
+        @extend .text-white;
         transition: background-color 200ms ease-out;
 
-        a { color: white; }
+        a { @extend .text-white; }
 
         h3, p, .lista {
             transform: translateY(40px);
@@ -34,10 +33,11 @@
         }
 
         .link {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            gap: 5px;
+            @extend .d-flex;
+            @extend .flex-row;
+            @extend .flex-wrap;
+            @extend .gap-2;
+            @extend .text-center;
         }
 
         &:hover {
