@@ -8,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
 
   projects = [
-    './assets/images/Rectangle 4.png',
-    './assets/images/Rectangle 5.png',
-    './assets/images/Rectangle 6.png'
+    {
+      nome: 'SparklePHP',
+      desc: 'Framework PHP. Manipula os Sockets, Rotas.',
+      img: null,
+      links: [
+        {
+          label: 'Github',
+          url: 'https://github.com/lipeRefosco/sparklePHP'
+        }
+      ]
+    }
   ]
 
   constructor() { }
