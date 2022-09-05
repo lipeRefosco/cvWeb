@@ -12,19 +12,21 @@ export class CursosComponent implements OnInit {
       nome: 'Engenharia de Software',
       instituicao: {
         nome: 'UNINTER',
-        logo: '../../assets/avatar-github.jpeg',
+        logo: '../../assets/logos/uninter.jpg',
         inicio: '25/02/2021',
-        fim: '25/02/2022'
-      }
+        fim: 'Em andamento...'
+      },
+      code: null
     },
     {
       nome: 'Formação PHP',
       instituicao: {
         nome: 'Alura',
-        logo: '../../assets/avatar-github.jpeg',
+        logo: '../../assets/logos/alura.jpg',
         inicio: '25/10/2021',
         fim: '25/06/2022'
-      }
+      },
+      code: null
     }
   ]
 

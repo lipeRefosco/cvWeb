@@ -9,7 +9,7 @@
             <span>{{ curso.instituicao.inicio }} até {{ curso.instituicao.fim }}</span>
         </div>
         <div class="curso__opc">
-            <span class="curso__opc-code">Code ID: hash...asdpoj1jvds-u2jknasf-n$@#)(asawras</span>
+            <span *ngIf="curso.code" class="curso__opc-code">Code ID: {{ curso.code }}</span>
         </div>
     </li>
 </ul>
