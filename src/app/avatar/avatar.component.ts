@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvatarComponent {
 
-  avatarURL = window.location.hostname === "localhost" ?
-  "assets/avatar-github.jpeg" : "https://avatars.githubusercontent.com/u/92929224?v=4"
+  avatarURL = 'assets/avatar.jpg'
+
 }
